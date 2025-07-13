@@ -1,0 +1,68 @@
+CRITICAL - 2025-07-13 14:42:37 --> CodeIgniter\Exceptions\CriticalError: The required PHP extension "mysqli" is not loaded. Install and enable it to use "MySQLi" driver.
+[Method: GET, Route: employees]
+in SYSTEMPATH/Database/Database.php on line 182.
+ 1 SYSTEMPATH/Database/Database.php(59): CodeIgniter\Database\Database->checkDbExtension('MySQLi')
+ 2 SYSTEMPATH/Database/Config.php(82): CodeIgniter\Database\Database->load([...], 'default')
+ 3 SYSTEMPATH/Model.php(155): CodeIgniter\Database\Config::connect('default')
+ 4 SYSTEMPATH/Config/Factories.php(236): CodeIgniter\Model->__construct(null)
+ 5 SYSTEMPATH/Config/Factories.php(170): CodeIgniter\Config\Factories::createInstance('models', 'App\\Models\\EmployeeModel', [...])
+ 6 SYSTEMPATH/Common.php(804): CodeIgniter\Config\Factories::__callStatic('models', [...])
+ 7 SYSTEMPATH/RESTful/BaseResource.php(70): model('App\\Models\\EmployeeModel')
+ 8 SYSTEMPATH/RESTful/BaseResource.php(51): CodeIgniter\RESTful\BaseResource->setModel('App\\Models\\EmployeeModel')
+ 9 SYSTEMPATH/CodeIgniter.php(904): CodeIgniter\RESTful\BaseResource->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+10 SYSTEMPATH/CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+11 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-13 14:50:37 --> CodeIgniter\Exceptions\CriticalError: The required PHP extension "mysqli" is not loaded. Install and enable it to use "MySQLi" driver.
+[Method: GET, Route: employees]
+in SYSTEMPATH/Database/Database.php on line 182.
+ 1 SYSTEMPATH/Database/Database.php(59): CodeIgniter\Database\Database->checkDbExtension('MySQLi')
+ 2 SYSTEMPATH/Database/Config.php(82): CodeIgniter\Database\Database->load([...], 'default')
+ 3 SYSTEMPATH/Model.php(155): CodeIgniter\Database\Config::connect('default')
+ 4 SYSTEMPATH/Config/Factories.php(236): CodeIgniter\Model->__construct(null)
+ 5 SYSTEMPATH/Config/Factories.php(170): CodeIgniter\Config\Factories::createInstance('models', 'App\\Models\\EmployeeModel', [...])
+ 6 SYSTEMPATH/Common.php(804): CodeIgniter\Config\Factories::__callStatic('models', [...])
+ 7 SYSTEMPATH/RESTful/BaseResource.php(70): model('App\\Models\\EmployeeModel')
+ 8 SYSTEMPATH/RESTful/BaseResource.php(51): CodeIgniter\RESTful\BaseResource->setModel('App\\Models\\EmployeeModel')
+ 9 SYSTEMPATH/CodeIgniter.php(904): CodeIgniter\RESTful\BaseResource->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+10 SYSTEMPATH/CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+11 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-13 14:55:45 --> CodeIgniter\Exceptions\CriticalError: The required PHP extension "mysqli" is not loaded. Install and enable it to use "MySQLi" driver.
+[Method: GET, Route: employees]
+in SYSTEMPATH/Database/Database.php on line 182.
+ 1 SYSTEMPATH/Database/Database.php(59): CodeIgniter\Database\Database->checkDbExtension('MySQLi')
+ 2 SYSTEMPATH/Database/Config.php(82): CodeIgniter\Database\Database->load([...], 'default')
+ 3 SYSTEMPATH/Model.php(155): CodeIgniter\Database\Config::connect('default')
+ 4 SYSTEMPATH/Config/Factories.php(236): CodeIgniter\Model->__construct(null)
+ 5 SYSTEMPATH/Config/Factories.php(170): CodeIgniter\Config\Factories::createInstance('models', 'App\\Models\\EmployeeModel', [...])
+ 6 SYSTEMPATH/Common.php(804): CodeIgniter\Config\Factories::__callStatic('models', [...])
+ 7 SYSTEMPATH/RESTful/BaseResource.php(70): model('App\\Models\\EmployeeModel')
+ 8 SYSTEMPATH/RESTful/BaseResource.php(51): CodeIgniter\RESTful\BaseResource->setModel('App\\Models\\EmployeeModel')
+ 9 SYSTEMPATH/CodeIgniter.php(904): CodeIgniter\RESTful\BaseResource->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+10 SYSTEMPATH/CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+11 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-13 14:55:52 --> CodeIgniter\Exceptions\CriticalError: The required PHP extension "mysqli" is not loaded. Install and enable it to use "MySQLi" driver.
+[Method: GET, Route: employees]
+in SYSTEMPATH/Database/Database.php on line 182.
+ 1 SYSTEMPATH/Database/Database.php(59): CodeIgniter\Database\Database->checkDbExtension('MySQLi')
+ 2 SYSTEMPATH/Database/Config.php(82): CodeIgniter\Database\Database->load([...], 'default')
+ 3 SYSTEMPATH/Model.php(155): CodeIgniter\Database\Config::connect('default')
+ 4 SYSTEMPATH/Config/Factories.php(236): CodeIgniter\Model->__construct(null)
+ 5 SYSTEMPATH/Config/Factories.php(170): CodeIgniter\Config\Factories::createInstance('models', 'App\\Models\\EmployeeModel', [...])
+ 6 SYSTEMPATH/Common.php(804): CodeIgniter\Config\Factories::__callStatic('models', [...])
+ 7 SYSTEMPATH/RESTful/BaseResource.php(70): model('App\\Models\\EmployeeModel')
+ 8 SYSTEMPATH/RESTful/BaseResource.php(51): CodeIgniter\RESTful\BaseResource->setModel('App\\Models\\EmployeeModel')
+ 9 SYSTEMPATH/CodeIgniter.php(904): CodeIgniter\RESTful\BaseResource->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+10 SYSTEMPATH/CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+11 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH/Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
