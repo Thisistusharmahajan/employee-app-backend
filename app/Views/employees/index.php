@@ -96,8 +96,8 @@ document.getElementById('registerForm').addEventListener('submit', function (e) 
     };
 
     const url = id
-        ? `http://localhost:8080/employees/update/${id}`
-        : 'http://localhost:8080/employees';
+        ? `https://employee-app-backend-production.up.railway.app/employees/update/${id}`
+        : 'https://employee-app-backend-production.up.railway.app/employees';
 
     fetch(url, {
         method: 'POST',
@@ -119,7 +119,7 @@ document.getElementById('registerForm').addEventListener('submit', function (e) 
 });
 
 function fetchEmployees() {
-    fetch('http://localhost:8080/employees/getAll')
+    fetch('https://employee-app-backend-production.up.railway.app/employees/getAll')
         .then(response => response.json())
         .then(data => {
             const tbody = document.querySelector('#employeeTable tbody');
@@ -142,7 +142,7 @@ function fetchEmployees() {
 }
 
 function editEmployee(id) {
-    fetch(`http://localhost:8080/employees/getById/${id}`)
+    fetch(`https://employee-app-backend-production.up.railway.app/employees/getById/${id}`)
         .then(response => response.json())
         .then(emp => {
             document.getElementById('name').value = emp.name;
@@ -162,7 +162,7 @@ function editEmployee(id) {
 function deleteEmployee(id) {
     if (!confirm('Are you sure you want to delete this employee?')) return;
 
-    fetch(`http://localhost:8080/employees/delete/${id}`, {
+    fetch(`https://employee-app-backend-production.up.railway.app/employees/delete/${id}`, {
         method: 'DELETE'
     })
     .then(res => res.json())
