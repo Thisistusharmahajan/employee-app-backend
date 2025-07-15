@@ -17,7 +17,9 @@ class EmployeeModel extends Model
     'email_id',
     'mobile_number',
     'role',
-    'current_tech_stack'
+    'current_tech_stack',
+    'password',
+    'is_admin'
 ];
 
 
