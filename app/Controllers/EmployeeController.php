@@ -21,13 +21,14 @@ public function signUp()
     return view('employees/auth/SignUp.php');
 } 
 
-public function store()
+public function store($data)
 {
     $model = new \App\Models\EmployeeModel();
-    $data  = $this->request->getJSON(true);
+    // $data  = $this->request->getJSON(true);
 
-    $model->save($data);
-    return $this->respondCreated(['status'=>'created','data'=>$data]);
+    // $model->save($data);
+    // return $this->respondCreated(['status'=>'created','data'=>$data]);
+    return $model->insert($data);
 }
 public function update($id=0)
 {

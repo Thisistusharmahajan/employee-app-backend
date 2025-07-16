@@ -1,22 +1,30 @@
 <?php
 namespace App\Controllers;
 use App\Models\EmployeeModel;
+use App\Controllers\EmployeeController;
 
-class AuthController extends BaseController
+class AuthController extends EmployeeController
 {
     public function register()
     {
-        $employeeModel = new EmployeeModel();
-        $data = [
-            'name'=> $this->request->getPost('name'),
-            'email'=> $this->request->getPost('email'),
-            'phone'=> $this->request->getPost('phone'),
-            'role'=> $this->request->getPost('role'),
-            'current_tech_stack'=> $this->request->getPost('stack'),
-            'password'=> password_hash($this->request->getPost('password'),PASSWORD_DEFAULT)
-        ];
-        $employeeModel->save($data);
-        return redirect()->to('https://employee-app-backend-production.up.railway.app/employees/login');
+        $requestData = $this->request->getPost();
+        $result = $this->store($requestData);
+        // $employeeModel = new EmployeeModel();
+        // $data = [
+        //     'name'=> $this->request->getPost('name'),
+        //     'email'=> $this->request->getPost('email'),
+        //     'phone'=> $this->request->getPost('phone'),
+        //     'role'=> $this->request->getPost('role'),
+        //     'current_tech_stack'=> $this->request->getPost('stack'),
+        //     'password'=> password_hash($this->request->getPost('password'),PASSWORD_DEFAULT)
+        // ];
+        // $employeeModel->save($data);
+        if($result)
+        {
+            return redirect()->to('https://employee-app-backend-production.up.railway.app/employees/login')->with('success','Added Please Login');
+        }else{
+            redirect()->back()->with('error','Something went wrong');
+        }
     }
     public function loginPost()
     {
