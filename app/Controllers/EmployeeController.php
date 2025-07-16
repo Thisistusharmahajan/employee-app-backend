@@ -26,9 +26,9 @@ public function store($data)
     $model = new \App\Models\EmployeeModel();
     // $data  = $this->request->getJSON(true);
      print_r($data);
-    // $model->save($data);
-    // return $this->respondCreated(['status'=>'created','data'=>$data]);
-    return $model->insert($data);
+    $model->save($data);
+    return $this->respondCreated(['status'=>'created','data'=>$data]);
+    //return $model->save($data);
 }
 public function update($id=0)
 {
