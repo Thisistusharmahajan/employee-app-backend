@@ -19,6 +19,7 @@ class AuthController extends EmployeeController
         //     'password'=> password_hash($this->request->getPost('password'),PASSWORD_DEFAULT)
         // ];
         // $employeeModel->save($data);
+        print($result);
         if($result)
         {
             return redirect()->to('https://employee-app-backend-production.up.railway.app/employees/login')->with('success','Added Please Login');
