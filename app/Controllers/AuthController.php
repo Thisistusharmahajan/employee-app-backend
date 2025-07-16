@@ -16,7 +16,7 @@ class AuthController extends BaseController
             'password'=> password_hash($this->request->getPost('password'),PASSWORD_DEFAULT)
         ];
         $employeeModel->save($data);
-        return redirect()->to('/Login');
+        return redirect()->to('https://employee-app-backend-production.up.railway.app/employees/login');
     }
     public function loginPost()
     {
@@ -40,7 +40,7 @@ class AuthController extends BaseController
     public function logout()
     {
         session()->destroy();
-        return redirect()->to('/Login');
+        return redirect()->to('https://employee-app-backend-production.up.railway.app/employees/login');
     }
 }
 ?>
