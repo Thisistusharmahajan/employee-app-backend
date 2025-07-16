@@ -10,24 +10,25 @@ class EmployeeController extends ResourceController
     protected $format = 'json';
 public function index()
 {    
-    return view('employees/index.php');
+    return view('employees/SignUp.php');
 }
 public function login()
 {    
-         return view('employees/auth/Login.php');
-} 
-public function signUp()
-{    
-    return view('employees/auth/SignUp.php');
+    return view('employees/Login.php');
 } 
 
-public function store($data)
+public function signUp()
+{    
+    return view('employees/SignUp.php');
+} 
+
+public function store()
 {
     $model = new \App\Models\EmployeeModel();
     $data  = $this->request->getJSON(true);
-    $model->insert($data);
+
+    $model->save($data);
     return $this->respondCreated(['status'=>'created','data'=>$data]);
-    //return $model->insert($data);
 }
 public function update($id=0)
 {
