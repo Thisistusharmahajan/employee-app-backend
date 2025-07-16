@@ -2,6 +2,7 @@
 
 use App\Controllers\EmployeeController;
 use CodeIgniter\Router\RouteCollection;
+use App\Controllers\AuthController;
 
 /**
  * @var RouteCollection $routes
