@@ -10,7 +10,7 @@ use App\Controllers\AuthController;
 // $routes->get('/', 'Home::index');
 
 $routes->get('employees','EmployeeController::index');
-// $routes->post('employees','EmployeeController::store');
+$routes->post('employees','EmployeeController::store');
 $routes->get('employees/login','EmployeeController::login');
 $routes->get('employees/signUp','EmployeeController::signUp');
 $routes->post('employees/register','AuthController::register');
