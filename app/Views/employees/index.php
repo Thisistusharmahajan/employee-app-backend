@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Employee Registration</title>
+    <title>Admin Dashboard</title>
     <style>
         body {
             font-family: Arial;
@@ -57,7 +57,7 @@
 </head>
 <body>
 <div class="container">
-    <h2>Employee Registration</h2>
+    <h2>Add an Employee</h2>
 
     <form id="registerForm">
         <input type="text" id="name" placeholder="Full Name" required>
@@ -65,7 +65,9 @@
         <input type="text" id="phone" placeholder="Phone Number" required>
         <input type="text" id="role" placeholder="Role" required>
         <input type="text" id="stack" placeholder="Current Tech Stack" required>
-        <button type="submit" id="submitBtn">Add</button>
+        <input type='password' id='password' placeholder="user@somepass" required>
+        <input type='password' id='confirm_password' placeholder="user@somepass" required>
+        <button type="submit" id="submitBtn">Sign Up</button>
     </form>
 
     <h3>Employee List</h3>
@@ -117,6 +119,7 @@ document.getElementById('registerForm').addEventListener('submit', function (e) 
         alert('Failed to submit employee');
     });
 });
+
 
 function fetchEmployees() {
     fetch('https://employee-app-backend-production.up.railway.app/employees/getAll')
