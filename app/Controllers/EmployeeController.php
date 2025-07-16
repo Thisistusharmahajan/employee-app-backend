@@ -11,7 +11,16 @@ class EmployeeController extends ResourceController
 public function index()
 {    
     return view('employees/index.php');
+}
+public function login()
+{    
+         return view('employees/auth/Login.php');
 } 
+public function signUp()
+{    
+    return view('employees/auth/SignUp.php');
+} 
+
 public function store()
 {
     $model = new \App\Models\EmployeeModel();
