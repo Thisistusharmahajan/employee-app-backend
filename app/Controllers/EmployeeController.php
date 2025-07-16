@@ -24,10 +24,10 @@ public function signUp()
 public function store($data)
 {
     $model = new \App\Models\EmployeeModel();
-    // $data  = $this->request->getJSON(true);
-    // $model->insert($data);
-    // return $this->respondCreated(['status'=>'created','data'=>$data]);
-    return $model->insert($data);
+    $data  = $this->request->getJSON(true);
+    $model->insert($data);
+    return $this->respondCreated(['status'=>'created','data'=>$data]);
+    //return $model->insert($data);
 }
 public function update($id=0)
 {

@@ -20,7 +20,7 @@ class AuthController extends EmployeeController
         // ];
         // $employeeModel->save($data);
         //print_r($result);
-        if($result)
+        if($result!=null)
         {
             return redirect()->to('https://employee-app-backend-production.up.railway.app/employees/login')->with('success','Added Please Login');
         }else{
