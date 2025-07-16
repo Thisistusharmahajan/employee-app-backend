@@ -2,7 +2,7 @@
 namespace App\Controllers;
 use App\Models\EmployeeModel;
 
-class Auth extends BaseController
+class AuthController extends BaseController
 {
     public function register()
     {
