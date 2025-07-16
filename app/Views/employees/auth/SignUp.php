@@ -58,7 +58,7 @@
 <body>
 <div class="container">
     <h2>Employee Registration</h2>
-    <form  id="" action="https://employee-app-backend-production.up.railway.app/employees/auth/register" method="post">
+    <form  id="" action="https://employee-app-backend-production.up.railway.app/employees/register" method="post">
         <input type="text" id="name" placeholder="Full Name" required>
         <input type="email" id="email" placeholder="Email Address" required>
         <input type="text" id="phone" placeholder="Phone Number" required>

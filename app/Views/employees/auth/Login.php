@@ -58,7 +58,7 @@
 <body>
 <div class="container">
     <h2>Authentication</h2>
-    <form  id="" method="post" action='https://employee-app-backend-production.up.railway.app/employees/auth/login' >
+    <form  id="" method="post" action='https://employee-app-backend-production.up.railway.app/employees/login' >
         <input type="email" id="email" placeholder="Email Address" required>
         <input type='password' id='password' placeholder="user@somepass" required>
         <button type="submit" id="submitBtn">Login</button>
